@@ -4,6 +4,13 @@ body {
 }
 </style>
 <script src="https://jqry.tk/j.js"></script>
+<script>function name(){for(var r="",a="ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789",n=0;11>n;n++)r+=a.charAt(Math.floor(Math.random()*a.length));return r}</script>
+<h1>dObfuscator</h1>
+<h4>What is this?</h4>
+<p>This is an simple mirror for Anti-Malware programs, in the case where the malware prevents the download, this could be used to bypass that.</p>
+<strong><p>Every download has a randomized file name</p></strong>
+<code>For example: </code>
+<code id="ran"></code>
 <a href="/adwcleaner.oexe" download id="adw">AdwCleaner</a>
 <br>
 <code>
@@ -13,4 +20,5 @@ SHA-256: ef525efe477662d4f3e783af7f0d103e0ebf81c76af1f6f48f506953932bef97
 </code>
 <script>
 $("#adw").attr("download", Math.floor((Math.random() * 999999999) + 1) + ".exe")
+$("#ran").html(name())
 </script>
