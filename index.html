@@ -13,18 +13,20 @@ h2 {
 <script>function name(){for(var r="",a="ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789",n=0;11>n;n++)r+=a.charAt(Math.floor(Math.random()*a.length));return r}</script>
 <h1>dObfuscator</h1>
 <h4>What is this?</h4>
-<p>This is an simple mirror for Anti-Malware programs, in the case where the malware prevents the download, this could be used to bypass that.</p>
-<span style="line-height: 0px"><strong><p>Every download has a randomized file name.</p></strong><code>For example: </code><code id="ran"></code></span>
+<p>This is an simple mirror download site for Anti-Malware programs, in the case where the malware prevents the download, this could be used to bypass that.</p>
+<span style="line-height: 0px"><strong><p>Every download has a randomized file name.</p></strong><code>For example: </code><code id="show"></code></span>
 <br>
 <br>
-<a href="/adwcleaner.oexe" download id="adw"><h2>AdwCleaner</h2></a>
+<a href="/adwcleaner.oexe" download class="ran"><h2>AdwCleaner</h2></a>
 <br>
 <code>
 Version: v5.118
 <br>
 SHA-256: ef525efe477662d4f3e783af7f0d103e0ebf81c76af1f6f48f506953932bef97
+<br>
 </code>
+<a href="https://toolslib.net/downloads/viewdownload/1-adwcleaner/">Official Download Site</a>
 <script>
-$("#adw").attr("download", name() + ".exe")
-$("#ran").html(name() + ".exe")
+$(".ran").attr("download", name() + ".exe")
+$("#show").html(name() + ".exe")
 </script>
